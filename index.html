@@ -1,395 +1,447 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Profitus</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW X6</title>
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.min.css">
+   
+    <script src="js/accordion.js" defer></script>
+    <script src="js/smoothScroll.js" defer></script>
+    <script src="js/tabs.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/burger.js" defer></script>
+    <script src="js/sendForm.js" defer></script>
+
 </head>
-
 <body>
-
-
-  <main class="app">
-    <!-- titles -->
-    <div class="title title-logo"><img src="images/leftside/shutterstock_1883865172 [преобразованный] 1.png" alt="">
-      <a href="#"><img src="images/leftside/Rectangle 284.png" class="hidden"></a>
+  <!-- header (start) -->
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="header-main">
+          <a href="#" class="logo header__logo">
+            <img src="img/logo.svg"
+              alt="Logo: BMW X6"
+              class="logo__img">
+          </a>
+          <!-- /.logo -->
+          <nav class="menu">
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <a href="#design"
+                  class="menu-list__link">
+                  Дизайн
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#feature"
+                  class="menu-list__link">
+                  Характеристики
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#"
+                  class="menu-list__link">
+                  Дилерская сеть
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#contacts"
+                  class="menu-list__link">
+                  Тест-драйв
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.menu -->
+        </div>
+        <!-- /.header-main -->
+        <a href="tel:88005437809" class="phone">
+          8 800 543 78 09
+        </a>
+        <button class="humburger-menu" aria-label="Бургер меню">
+        </button>
+      </div>
+      <!-- /.header-wrapper -->
     </div>
-    <div class="title title-participants">
-      <h1 class="title-name">топ трейдеры</h1>
-      <div class="buttons">
-        <button class="btn--sort first">Все время</button>
-        <button class="btn--sort">30 дней</button>
-        <button class="btn--sort last">Сегодня</button>
-      </div>
-    </div>
-    <div class="title title-profits">
-      <h1 class="title-name">профиты</h1>
-    </div>
-    <!-- leftside -->
-    <div class='user-buttons'>
-      <div class="user-info">
-        <div class="user-avatar"><a href="#"><img src="images/leftside/Rectangle 284.png" alt=""></a></div>
-        <div class="user-name"> <a href="#">bitcoin68</a></div>
-        <div class="user-profit">+223.67%</div>
-      </div>
-      <div class="chart">
-        <button class="chart-icon">
-          <img src="images/leftside/Chartfull.png" alt=""></button>
-        <div class="chart-name">топ</div>
+  </header>
+  <!-- header (end) -->
 
+  <!-- main (start) -->
+  <section class="main" id="main">
+    <div class="container">
+      <div class="main-wrapper">
+        <div class="offer">
+          <h1 class="main__title">BMW X6</h1>
+          <p class="main__descr">Поражающий внешний облик
+          и&nbsp;впечатляющая функциональность</p>
+          <a href="#contacts" type="button" class="button main__button">
+            Тест-драйв
+          </a>
+          <a href="#design" class="main__scroll" aria-label="к следующему экрану"></a>
+          
+        </div>
+        <!-- /.offer -->
+        <div class="main-img">
+          <a href="https://youtu.be/dkrFZSWyklU" class="play">
+            
+            Смотреть видео
+          </a>
+          
+        </div>
       </div>
-      <div class="user-settings">
-        <button class="language"><img src="images/leftside/tricolor.png" alt="" style="border-radius: 50%;"></button>
-        <button class="settings"><img src="images/leftside/Setting.png" alt=""></button>
-        <button class="shutdown"><img src="images/leftside/Shutdown.png" alt=""></button>
-      </div>
+      <!-- /.main-wrapper -->
     </div>
-    <!-- center  -->
-    <div class="participants">
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">01</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/leftside/Rectangle 284.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">Bitcoin68</div>
-              <div class="info-name">$1M</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/bitmex.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.8830 BTC</div>
-          <div class="profit-num">+766%</div>
-        </div>
-      </div>
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">02</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/2.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">esther</div>
-              <div class="info-name">Darell</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/binance.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.10270 BTC</div>
-          <div class="profit-num">+731%</div>
-        </div>
-      </div>
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">03</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/3.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">ann</div>
-              <div class="info-name">Kyle</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/bitmex.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.1203 BTC</div>
-          <div class="profit-num">+330%</div>
-        </div>
-      </div>
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">04</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/4.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">courtney</div>
-              <div class="info-name">Dianne</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/coinbase.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.0342 BTC</div>
-          <div class="profit-num">+155%</div>
-        </div>
-      </div>
+  </section>
+  <!-- main (end) -->
 
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">05</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/5.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">arthur</div>
-              <div class="info-name">kristin</div>
-            </div>
+  <!-- design (start) -->
+  <section class="section design" id="design">
+    <div class="container">
+      <div class="design-wrapper">
+        <div class="design-block">
+          <img src="img/car/image-5.png" alt="BMW X6" class="feature__img design-block__img" data-tabs-field="interior">
+          <img src="img/car/image-4.png" alt="BMW X6" class="feature__img design-block__img hidden" data-tabs-field="body">
+          <div class="design-text">
+            <h2 class="section__title design__title">
+              Комфорт в деталях
+            </h2>
+            <h2 class="section__title design__title hidden">
+              Притягивает взгляды
+            </h2>
+            <ul class="design-list">
+              <li>
+                <button type="button" class="design-list__item design-list__item_active" data-tabs-handler="interior">Дизайн салона</button>
+              </li>
+              <li>
+                <button type="button" class="design-list__item" data-tabs-handler="body">Дизайн кузова</button>
+              </li>
+            </ul>
+            <!-- /.design-list -->
+            <ul>
+              <li class="design__descr" data-tabs-field="interior">
+                <p class="design__description-text">
+                  Контурная подсветка в передних и задних дверях создает в салоне автомобиля уютную и расслабляющую обстановку.
+                  Хрустальные детали встроены в рукоятку рычага селектора, регулятор громкости.
+                  Панорамная стеклянная крыша дарит ощущение невероятного простора днем, а в ночное время создает в салоне особую атмосферу.
+                </p>
+                <button class="more">
+                  — Узнать больше
+                </button>
+              </li>
+              <li class="design__descr hidden" data-tabs-field="body">
+                <p class="design__description-text">
+                  Широкий. Динамичный. Мускулистый. Обновлённый BMW X6 сочетает в себе солиддность серии X со спортивным купе. Решительная передняя часть с широкими воздухозаборниками недвусмысленно намекает на то, какая мощь скрыта под капотом. Большая двойная решётка радиатора спортивной формы подччёркивает атлетичность автомобиля. Усиливают впечатление фирменные двойные фары BMW и широко раставленные противотуманные фары.
+                </p>
+                <button class="more">
+                  — Узнать больше
+                </button>
+            </li>
+            </ul>
           </div>
+          <!-- /.design-text -->
         </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/bitmex.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">1.2206 BTC</div>
-          <div class="profit-num">+117%</div>
-        </div>
+        <!-- /.design-block -->
+        <ul>
+          <li class="design-images" data-tabs-field="interior">
+              <img src="img/design/interior01.jpg" alt="BMW X6" class="design__img">
+              <img src="img/design/interior02.jpg" alt="BMW X6" class="design__img">
+              <img src="img/design/interior03.jpg" alt="BMW X6" class="design__img">
+              <img src="img/design/interior04.jpg" alt="BMW X6" class="design__img">
+          </li>
+          <li class="design-images hidden" data-tabs-field="body">
+              <img src="img/design/body01.jpg" alt="BMW X6" class="design__img">
+              <img src="img/design/body02.jpg" alt="BMW X6" class="design__img">
+              <img src="img/design/body03.jpg" alt="BMW X6" class="design__img">
+              <img src="img/design/body04.jpg" alt="BMW X6" class="design__img">
+          </li>
+        </ul>
       </div>
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">06</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/6.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">mitchell</div>
-              <div class="info-name">ann</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/binance.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.1977 BTC</div>
-          <div class="profit-num">+101%</div>
-        </div>
-      </div>
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">07</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/7.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">darlene</div>
-              <div class="info-name">gladys</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/coinbase.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.1502 BTC</div>
-          <div class="profit-num">+72%</div>
-        </div>
-      </div>
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">08</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/8.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">leslie</div>
-              <div class="info-name">colleen</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/bitmex.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.0052 BTC</div>
-          <div class="profit-num">+66%</div>
-        </div>
-      </div>
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">09</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/9.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">ronald</div>
-              <div class="info-name">mitchell</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/coinbase.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.0031 BTC</div>
-          <div class="profit-num">+65%</div>
-        </div>
-      </div>
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">10</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/10.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">philip</div>
-              <div class="info-name">arlene</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/coinbase.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.1564 BTC</div>
-          <div class="profit-num">+58%</div>
-        </div>
-      </div>
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">11</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/11.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">gladys</div>
-              <div class="info-name">arlene</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/bitmex.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.0200 BTC</div>
-          <div class="profit-num">+42%</div>
-        </div>
-      </div>
-      <div class="participant">
-        <div class="flex">
-          <div class="participant-number">12</div>
-          <div class="participant-info">
-            <div class="info-avatar"><img src="images/center/12.png" alt="" width="40" height="40"></div>
-            <div class="wrapper">
-              <div class="info-lastname">victoria</div>
-              <div class="info-name">aubrey</div>
-            </div>
-          </div>
-        </div>
-        <div class="profit">
-          <div class="profit-logo"><img src="images/rightside/bitmex.png" alt="" width="24" height="24"></div>
-          <div class="profit-sum">0.0133 BTC</div>
-          <div class="profit-num">+24%</div>
-        </div>
-      </div>
+      <!-- /.design-wrapper -->
     </div>
+  </section>
+  <!-- design (end) -->
 
-    <!-- masters -->
-    <div class="masters">
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/1.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">gladys</div>
-          <div class="profit-name">victoria</div>
+  <!-- feature (start) -->
+  <section class="section feature" id="feature">
+    <div class="container">
+      <div class="feature-wrapper">
+        <div class="feature-block">
+          <h2 class="section__title feature__title">
+            Технические характеристики
+          </h2>
+          <ul class="feature-list">
+            <li class="feature__item">
+              <button type="button" class="feature__link feature__link_active">
+                <div class="feature-item-wrap">
+                  <span class="feature-item__title">
+                    Спецификация
+                  </span>
+                </div>
+              </button>
+              <!-- /.feature__link -->
+              <ul class="feature-sub">
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Максимальная скорость
+                  </span>
+                  <span class="feature-sub__value">
+                    250 км/ч
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Расход топлива
+                  </span>
+                  <span class="feature-sub__value">
+                    9,7 л
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Вес
+                  </span>
+                  <span class="feature-sub__value">
+                    2,245 кг
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Разгон до сотни
+                  </span>
+                  <span class="feature-sub__value">
+                    4.8 секунды
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Привод
+                  </span>
+                  <span class="feature-sub__value">
+                    полный
+                  </span>
+                </li>
+              </ul>
+              <!-- /.feature-list-sub -->
+            </li>
+            <li class="feature__item">
+              <button type="button" class="feature__link">
+                <div class="feature-item-wrap">
+                  <span class="feature-item__title">
+                    Двигатель
+                  </span>
+                </div>
+              </button>
+              <ul class="feature-sub hidden">
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Двигатель
+                  </span>
+                  <span class="feature-sub__value">
+                    бензиновый
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Мощность
+                  </span>
+                  <span class="feature-sub__value">
+                    450 л. с.
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Крутящий момент двигателя
+                  </span>
+                  <span class="feature-sub__value">
+                    650 Н·м	
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Объём двигателя
+                  </span>
+                  <span class="feature-sub__value">
+                    4395 см3
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li class="feature__item">
+              <button type="button" class="feature__link">
+                <div class="feature-item-wrap">
+                  <span class="feature-item__title">
+                    Ходовые качества
+                  </span>
+                </div>
+              </button>
+              <ul class="feature-sub hidden">
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Дорожный просвет
+                  </span>
+                  <span class="feature-sub__value">
+                    212 мм
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Антиблокировочная система
+                  </span>
+                  <span class="feature-sub__value">
+                    ABS
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Система стабилизации
+                  </span>
+                  <span class="feature-sub__value">
+                    ESP
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Система помощи при спуске
+                  </span>
+                  <span class="feature-sub__value">
+                    +
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Система помощи при трогании в гору
+                  </span>
+                  <span class="feature-sub__value">
+                    +
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li class="feature__item">
+              <button type="button" class="feature__link">
+                <div class="feature-item-wrap">
+                  <span class="feature-item__title">
+                    Комфорт
+                  </span>
+                </div>
+              </button>
+              <ul class="feature-sub hidden">
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Климат-контроль
+                  </span>
+                  <span class="feature-sub__value">
+                    +
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Бортовой компьютер
+                  </span>
+                  <span class="feature-sub__value">
+                    +
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Датчик света и дождя
+                  </span>
+                  <span class="feature-sub__value">
+                    +
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Мультимедиа с сенсорным экраном
+                  </span>
+                  <span class="feature-sub__value">
+                    Apple CarPlay и Android Auto
+                  </span>
+                </li>
+                <li class="feature-sub__item">
+                  <span class="feature-sub__name">
+                    Регулировка сиденья водителя по высоте
+                  </span>
+                  <span class="feature-sub__value">
+                    +
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- /.feature-list -->
         </div>
-        <div class="master-button">+3.5%</div>
+        <!-- /.feature-block -->
       </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/2.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">shawn</div>
-          <div class="profit-name">shane</div>
-        </div>
-        <div class="master-button">+2.1%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/3.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">ann</div>
-          <div class="profit-name">greg</div>
-        </div>
-        <div class="master-button">+30.0%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/4.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">eduardo</div>
-          <div class="profit-name">philip</div>
-        </div>
-        <div class="master-button">+8.4%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/5.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">arlene</div>
-          <div class="profit-name">angel</div>
-        </div>
-        <div class="master-button">+16.8%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/6.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">colleen</div>
-          <div class="profit-name">arthur</div>
-        </div>
-        <div class="master-button">+1.0%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/7.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">darlene</div>
-          <div class="profit-name">mitchell</div>
-        </div>
-        <div class="master-button">+0.1%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/2.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">shawn</div>
-          <div class="profit-name">shane</div>
-        </div>
-        <div class="master-button">+2.1%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/9.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">ronald</div>
-          <div class="profit-name">esther</div>
-        </div>
-        <div class="master-button">+2.7%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/10.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">dianne</div>
-          <div class="profit-name">debra</div>
-        </div>
-        <div class="master-button">+2.7%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/7.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">angel</div>
-          <div class="profit-name">arlene</div>
-        </div>
-        <div class="master-button">+20.2%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/3.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">ann</div>
-          <div class="profit-name">greg</div>
-        </div>
-        <div class="master-button">+30.0%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/13.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">darrell</div>
-          <div class="profit-name">colleen</div>
-        </div>
-        <div class="master-button">+17.8%</div>
-      </div>
-      <div class="master">
-        <div class="master-avatar"><img src="images/rightside/10.png" alt=""></div>
-        <div class="wrapper">
-          <div class="profit-lastname">gladys</div>
-          <div class="profit-name">arlene</div>
-        </div>
-        <div class="master-button">+23.2%</div>
-      </div>
+      <!-- /.feature-wrapper -->
     </div>
+  </section>
+  <!-- feature (end) -->
 
-    <!-- buttons-mobile -->
-    <div class="mobile-buttons hidden">
-      <div class="chart">
-        <button class="chart-icon">
-          <img src="images/leftside/Chartfull.png" alt=""></button>
+  <!-- contacts (start) -->
+  <section class="section contacts" id="contacts">
+    <div class="container">
+      <div class="contacts-wrapper">
+        <div class="contacts-form">
+          <h2 class="section__title">
+            Заявка на тест-драйв
+          </h2>
+          <p class="contacts__descr">
+            Оставьте свои контакты. Мы свяжемся с
+            вами и пригласим на тест-драйв в
+            удобное для вас время
+          </p>
+          <form class="form form-test-drive">
+            <input type="text" class="input" name="name" placeholder="Имя">
+            <input type="mail" class="input" name="mail" placeholder="Электронная почта">
+            <input type="text" class="input" name="phone" placeholder="Телефон">
+            <button type="submit" class="button form__button">
+              Отправить
+            </button>
+          </form>
+        </div>
+        <!-- /.contacts-form -->
       </div>
-      <div class="chart">
-        <button class="chart-icon">
-          <img src="images/leftside/Chartfull.png" alt=""></button>
-      </div>
-      <div class="chart">
-        <button class="chart-icon">
-          <img src="images/leftside/Chartfull.png" alt=""></button>
-      </div>
-      <div class="chart">
-        <button class="chart-icon">
-          <img src="images/leftside/Chartfull.png" alt=""></button>
-      </div>
+      <!-- /.contacts-wrapper -->
+    </div>
+  </section>
+  <!-- contacts (end) -->
+
+  <!-- modal (start) -->
+  <div class="modal hidden">
+    <div class="overlay"></div>
+    <div class="modal-wrapper">
+      <h2 class="section__title modal__title">
+        Подробное описание
+        комплектаций
+      </h2>
+      <p class="modal__descr">
+        Оставьте адрес электронной почты, на
+        который хотите получить документ с
+        описанием комплектаций
+      </p>
+      <button type="button" class="modal__close" aria-label="закрыть модальное окно">
+      </button>
+      <form class="form modal__form">
+        <input type="text" name="name" class="input modal__input" placeholder="Имя">
+        <input type="mail" name="mail" class="input modal__input" placeholder="Электронная почта">
+        <div class="modal-buttons">
+          <button type="submit" class="button modal__button">
+            Отправить
+          </button>
+        </div>
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+  </div>
+  <!-- modal (end) -->
 </body>
-
 </html>
